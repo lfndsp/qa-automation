@@ -1,6 +1,6 @@
 # QA Automation Portfolio
 
-A beginner-friendly Selenium + Pytest automation project demonstrating UI testing, Page Object Model (POM), positive/negative test cases, screenshots on failure, and HTML reporting.
+A Selenium + Pytest UI automation project demonstrating basic software QA automation skills.
 
 ## Tech Stack
 - Python 3.10+
@@ -9,7 +9,7 @@ A beginner-friendly Selenium + Pytest automation project demonstrating UI testin
 - pytest-html
 
 ## Test Site
-This project uses the public demo site https://the-internet.herokuapp.com/login.
+https://the-internet.herokuapp.com/login
 
 ## Test Coverage
 - Valid login
@@ -17,21 +17,7 @@ This project uses the public demo site https://the-internet.herokuapp.com/login.
 - Invalid password
 - Empty credentials
 
-## Setup
-
-```bash
-python -m venv .venv
-```
-
-Windows:
-```bash
-.venv\Scripts\activate
-```
-
-macOS/Linux:
-```bash
-source .venv/bin/activate
-```
+## How to Run
 
 Install dependencies:
 
@@ -48,30 +34,11 @@ pytest
 Generate an HTML report:
 
 ```bash
-pytest --html=reports/report.html --self-contained-html
+pytest --html=report.html --self-contained-html
 ```
 
 ## Project Structure
 
-```text
-qa-automation-portfolio/
-├── pages/
-│   ├── __init__.py
-│   └── login_page.py
-├── tests/
-│   ├── __init__.py
-│   └── test_login.py
-├── utils/
-│   ├── __init__.py
-│   └── screenshots.py
-├── reports/
-├── requirements.txt
-├── pytest.ini
-├── .gitignore
-└── README.md
-```
+All Python files are kept in the repository root to make uploading through the GitHub web interface simple.
 
-## Notes
-The project uses Selenium Manager, so a separate ChromeDriver download is normally not required when a compatible Chrome browser is installed.
-
-This is a portfolio project intended to demonstrate basic QA automation practices.
+This project demonstrates functional testing, negative testing, parameterized tests, Page Object Model concepts, defect validation, and failure screenshots.
